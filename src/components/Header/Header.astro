@@ -20,14 +20,10 @@ const lang = currentPage && getLanguageFromURL(currentPage);
     <div class="logo flex">
       <AstroLogo size={40} />
       <a href="/">
-        <h1>
-          <span class="flex-shrink">Unofficial </span>packwiz<span
-            class="flex-shrink">
-            Documentation</span>
-        </h1>
+        <h1>Unofficial packwiz Documentation</h1>
       </a>
     </div>
-    {KNOWN_LANGUAGE_CODES.length > 1 || CONFIG.ALGOLIA ? <div style="flex-grow: 1;"></div> : ""}
+    <div style="flex-grow: 1;"></div>
     {KNOWN_LANGUAGE_CODES.length > 1 && <LanguageSelect lang={lang} client:idle />}
     {CONFIG.ALGOLIA && <div class="search-item">
         <Search client:idle />
