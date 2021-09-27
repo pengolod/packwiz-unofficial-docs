@@ -94,7 +94,7 @@ p {
 }
 
 .content ul {
-  line-height: 1.1em;
+  line-height: 1.4em;
 }
 
 p,
@@ -156,6 +156,7 @@ a > code:not([class*="language"]) {
   color: var(--theme-text-accent);
   background: transparent;
   text-underline-offset: var(--padding-block);
+  line-height: 1.5;
 }
 
 a > code:not([class*="language"])::before {
