@@ -6,11 +6,11 @@ const MenuToggle: FunctionalComponent = () => {
   const [sidebarShown, setSidebarShown] = useState(false);
 
   useEffect(() => {
-    const body = document.getElementsByTagName("body")[0];
+    const gridLeft = document.getElementById("grid-left");
     if (sidebarShown) {
-      body.classList.add("mobile-sidebar-toggle");
+      gridLeft.classList.add("mobile-sidebar-toggle");
     } else {
-      body.classList.remove("mobile-sidebar-toggle");
+      gridLeft.classList.remove("mobile-sidebar-toggle");
     }
   }, [sidebarShown]);
 
