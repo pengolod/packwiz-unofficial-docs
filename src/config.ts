@@ -1,17 +1,14 @@
 export const SITE = {
   title: "Unofficial packwiz Documentation",
-  description: "Your website description.",
+  description: "A command-line tool for creating Minecraft modpacks.",
   defaultLanguage: "en_US",
 };
 
 export const OPEN_GRAPH = {
   image: {
-    src: "https://github.com/snowpackjs/astro/blob/main/assets/social/banner.png?raw=true",
-    alt:
-      "astro logo on a starry expanse of space," +
-      " with a purple saturn-like planet floating in the right foreground",
+    src: "/packwiz-og-image.png",
+    alt: "white background, with 'wizard hat' in purple, and 'brick' in orange",
   },
-  twitter: "astrodotbuild",
 };
 
 export const KNOWN_LANGUAGES = {
