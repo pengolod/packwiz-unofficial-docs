@@ -3,10 +3,12 @@ import MainLayout from "../layouts/MainLayout.astro";
 import slug from "slug";
 
 export async function getStaticPaths() {
-  const pages = await Astro.fetchContent("../content/*.md");
+  const pages = await Astro.fetchContent("../content/**.md");
   return pages.map((page) => {
+    const pageSlug = slug(page.title || page.astro.headers[0].slug);
+
     return {
-      params: { slug: slug(page.title) },
+      params: { slug: pageSlug },
       props: { page },
     };
   });
@@ -15,4 +17,4 @@ export async function getStaticPaths() {
 const { page } = Astro.props;
 ---
 
-<MainLayout content={page} />
+<MainLayout content={page}>{page.astro.html}</MainLayout>

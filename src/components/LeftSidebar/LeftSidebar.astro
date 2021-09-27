@@ -4,6 +4,8 @@ import { SIDEBAR } from "../../config.ts";
 const { currentPage } = Astro.props;
 const currentPageMatch = currentPage.slice(1);
 const langCode = getLanguageFromURL(currentPage);
+// we want to setup the sidebar to use the content of `pages` rather than hardcoding it...
+// const pages = await Astro.fetchContent("../../content/*.md");
 // SIDEBAR is a flat array. Group it by sections to properly render.
 const sidebarSections = SIDEBAR[langCode].reduce((col, item) => {
   if (item.header) {
