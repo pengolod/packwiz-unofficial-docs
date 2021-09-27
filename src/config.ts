@@ -16,10 +16,10 @@ export const KNOWN_LANGUAGES = {
 };
 
 // Uncomment this to add an "Edit this page" button to every page of documentation.
-// export const GITHUB_EDIT_URL = `https://github.com/snowpackjs/astro/blob/main/docs/`;
+export const GITHUB_EDIT_URL = `https://github.com/pengolod/packwiz-unofficial-docs/tree/main/`;
 
 // Uncomment this to add an "Join our Community" button to every page of documentation.
-// export const COMMUNITY_INVITE_URL = `https://astro.build/chat`;
+export const COMMUNITY_INVITE_URL = `https://discord.gg/DcSkRF4`;
 
 // Uncomment this to enable site search.
 // See "Algolia" section of the README for more information.
