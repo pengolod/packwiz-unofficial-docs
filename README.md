@@ -1,3 +1,5 @@
+Deprecated in favor of <http://packwiz.infra.link/> now! GH: https://github.com/packwiz/packwiz-website
+
 # Astro Starter Kit: Docs Site
 
 ```
